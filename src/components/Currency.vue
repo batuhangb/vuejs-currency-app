@@ -28,7 +28,7 @@
           <h1>{{selectedCurrency}}</h1>
           <input type="text" class="form-control" id="selectedPrice" v-model="selectedPrice">
         </div>
-          </p>
+
         </div>
         </div>
     </div>
@@ -80,8 +80,10 @@ export default {
   methods:{
     currencySelected(){
       this.selectedCurrency = this.currencyList[this.selectedCurrencyId].currencyName
+      
     },
     baseSelected(){
+      this.basePrice=1
       this.baseCurrency = this.currencyList[this.baseCurrencyId].currencyName
       let exchangeRate=this.currencyList[this.baseCurrencyId].exchangeRate
 

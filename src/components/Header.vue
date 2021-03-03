@@ -8,11 +8,11 @@
           to="/">
       Currency Exchange Rates
     </router-link>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-label="Toggle navigation" @click="expandNav= !expandNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" :class="{'show':expandNav}" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <router-link
           tag="li"
@@ -34,3 +34,14 @@
     </div>
   </nav>
 </template>
+<script>
+
+export default {
+  data(){
+    return{
+      expandNav:false
+    }
+  }
+  
+}
+</script>
