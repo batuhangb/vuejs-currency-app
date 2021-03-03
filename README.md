@@ -1,4 +1,4 @@
-# quiz-app
+# currency-app
 
 > A Vue.js project
 
