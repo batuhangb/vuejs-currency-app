@@ -19,19 +19,13 @@
         </tr>
       </tbody>
     </table>
-    </div>
-      <line-chart/>
-    </div>
   </div>
 </template>
 
 <script>
 import axios from "axios"
-import LineChart from "./Chart"
 export default {
-  components:{
-    LineChart
-  },
+
   data(){
     return{
       currencyList:[],
