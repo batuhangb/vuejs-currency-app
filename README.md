@@ -1,6 +1,6 @@
 # currency-app
 
-> A Vue.js project
+> A simple Vue.js project using exchangeratesapi.io API for exchange rates.
 
 ## Build Setup
 
